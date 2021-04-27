@@ -30,20 +30,41 @@
 // }
 
 // Snack 3:
-// Il software deve chiedere per 10 volte all’utente di inserire un numero.
-var numero=new Array();
-var i;
 
-for (i=0; i<10; i++){
-       numero.push(Number(prompt('Insert a number')));
+
+// Il software deve chiedere per 10 volte all’utente di inserire un numero.
+// var numero=new Array();
+// var i;
+
+// for (i=0; i<10; i++){
+//        numero.push(Number(prompt('Insert a number')));
       
+// }
+
+
+
+// console.log(numero);
+// var totale;
+
+// for (i=0; i<=numero.length; i++){
+//     totale= totale + numero[i]
+// }
+
+
+
+
+// console.log(totale);
+
+// ------- 
+
+
+var somma=0;
+for (var i=0; i< 10; i++){
+    var number = Number(prompt('Inserisci un numero'));
+    somma= somma + number;
 }
 
-console.log(numero);
-
-
-
-
+console.log(somma);
 
 
 
