@@ -58,10 +58,12 @@ console.log(user_Name);
 
 
 var invitato= false;
+var i;
 
-for (var i=0; i<=list.length; i++){
 
-    if (list[i]==user_Name){
+for (i=0; i<=list.length; i++){
+    var risultato= list[i];
+    if (risultato==user_Name){
        invitato=true;
        console.log(invitato);
         
