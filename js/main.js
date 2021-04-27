@@ -33,41 +33,44 @@
 
 
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
-// var numero=new Array();
-// var i;
+// Il programma stampa la somma di tutti i numeri inseriti. 
 
-// for (i=0; i<10; i++){
-//        numero.push(Number(prompt('Insert a number')));
-      
+// var somma=0;
+// for (var i=0; i< 10; i++){
+//     var number = Number(prompt('Inserisci un numero'));
+//     somma= somma + number;
 // }
 
+// console.log(somma);
 
 
-// console.log(numero);
-// var totale;
+// Snack 4:
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby,
+//  chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 
-// for (i=0; i<=numero.length; i++){
-//     totale= totale + numero[i]
-// }
-
-
-
-
-// console.log(totale);
-
-// ------- 
+// Definisco il contenuto della matrice 
+var list= new Array("andrea", "luca", "giovanni");
+// chiedo all'utente il suo nome 
+var user_Name = prompt('What\'s your name?').toLowerCase();
+console.log(user_Name);
+// Definisco le variabili del ciclo di verifica 
 
 
-var somma=0;
-for (var i=0; i< 10; i++){
-    var number = Number(prompt('Inserisci un numero'));
-    somma= somma + number;
+
+var invitato= false;
+
+for (var i=0; i<=list.length; i++){
+
+    if (list[i]==user_Name){
+       invitato=true;
+       console.log(invitato);
+        
+    } 
 }
 
-console.log(somma);
+if (invitato){
+    document.getElementById('stampa').innerHTML="You are IN";
+} else{
+    document.getElementById('stampa').innerHTML="sorry, you aren't in the List.";
+}
 
-
-
-
-
-// Il programma stampa la somma di tutti i numeri inseriti. 
