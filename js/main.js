@@ -31,11 +31,12 @@
 
 // Snack 3:
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
-var numero;
+var numero=new Array();
+var i;
 
-for (var i=0; i<10; i++){
-       numero=Number(prompt('Insert a number'));
-       numero = numero *i;
+for (i=0; i<10; i++){
+       numero.push(Number(prompt('Insert a number')));
+      
 }
 
 console.log(numero);
