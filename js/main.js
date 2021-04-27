@@ -48,31 +48,53 @@
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby,
 //  chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 
-// Definisco il contenuto della matrice 
-var list= new Array("andrea", "luca", "giovanni");
-// chiedo all'utente il suo nome 
-var user_Name = prompt('What\'s your name?').toLowerCase();
-console.log(user_Name);
+// // Definisco il contenuto della matrice 
+// var list= new Array("andrea", "luca", "giovanni");
+// // chiedo all'utente il suo nome 
+// var user_Name = prompt('What\'s your name?').toLowerCase();
+// console.log(user_Name);
 // Definisco le variabili del ciclo di verifica 
 
 
 
-var invitato= false;
-var i;
+// var invitato= false;
+// var i;
 
 
-for (i=0; i<=list.length; i++){
-    var risultato= list[i];
-    if (risultato==user_Name){
-       invitato=true;
-       console.log(invitato);
+// for (i=0; i<=list.length; i++){
+//     var risultato= list[i];
+//     if (risultato==user_Name){
+//        invitato=true;
+//        console.log(invitato);
         
-    } 
+//     } 
+// }
+
+// if (invitato){
+//     document.getElementById('stampa').innerHTML="You are IN";
+// } else{
+//     document.getElementById('stampa').innerHTML="sorry, you aren't in the List.";
+// }
+
+
+
+// SNACK 5
+
+// Crea un array vuoto.
+var list=new Array();
+
+// Chiedi per 6 volte all’utente di inserire un numero,
+
+for (i=1; i<=6; i++){
+    var user_number = Number(prompt('insert a number'));
+    if (user_number % 2 !== 0){
+        list.push(user_number);
+    }
+    
+   
 }
 
-if (invitato){
-    document.getElementById('stampa').innerHTML="You are IN";
-} else{
-    document.getElementById('stampa').innerHTML="sorry, you aren't in the List.";
-}
 
+
+// se è dispari inseriscilo nell’array.
+document.getElementById('stampa').innerHTML= "I numeri presenti nella seguente Array sono dispari : "+list;
