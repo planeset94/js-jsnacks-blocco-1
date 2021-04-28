@@ -119,7 +119,7 @@
 var user_number = Number(prompt('Tell me a number'));
 
 var i = 0;
-while (i < user_number) {
+while (i <= user_number) {
     var risultato = Math.pow(i, 3);
     var element = document.getElementById('stampa').innerHTML;
     document.getElementById('stampa').innerHTML = element + "<li>" + risultato + "</li>";
