@@ -35,6 +35,19 @@
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti. 
 
+// var user_number;
+// var somma = 0;
+// var list = new Array();
+// for (var i = 0; i < 3; i++) {
+//     user_number = Number(prompt('Insert a number'));
+//     list.push(user_number);
+//     somma = somma + list[i];
+
+// }
+
+// console.log("il risultato è " + somma);
+
+
 // var somma=0;
 // for (var i=0; i< 10; i++){
 //     var number = Number(prompt('Inserisci un numero'));
@@ -66,7 +79,7 @@
 //     if (risultato==user_Name){
 //        invitato=true;
 //        console.log(invitato);
-        
+
 //     } 
 // }
 
@@ -80,21 +93,36 @@
 
 // SNACK 5
 
-// Crea un array vuoto.
-var list=new Array();
+// // Crea un array vuoto.
+// var list=new Array();
 
-// Chiedi per 6 volte all’utente di inserire un numero,
+// // Chiedi per 6 volte all’utente di inserire un numero,
 
-for (i=1; i<=6; i++){
-    var user_number = Number(prompt('insert a number'));
-    if (user_number % 2 !== 0){
-        list.push(user_number);
-    }
-    
-   
+// for (i=1; i<=6; i++){
+//     var user_number = Number(prompt('insert a number'));
+//     if (user_number % 2 !== 0){
+//         list.push(user_number);
+//     }
+
+
+// }
+
+
+
+// // se è dispari inseriscilo nell’array.
+// document.getElementById('stampa').innerHTML= "I numeri presenti nella seguente Array sono dispari : "+list;
+
+
+// ----------------- SNACK 6 --------------------
+// Stampa il cubo dei primi N numeri, dove N è un numero indicato dall'utente. 
+
+var user_number = Number(prompt('Tell me a number'));
+
+var i = 0;
+while (i < user_number) {
+    var risultato = Math.pow(i, 3);
+    var element = document.getElementById('stampa').innerHTML;
+    document.getElementById('stampa').innerHTML = element + "<li>" + risultato + "</li>";
+
+    i++;
 }
-
-
-
-// se è dispari inseriscilo nell’array.
-document.getElementById('stampa').innerHTML= "I numeri presenti nella seguente Array sono dispari : "+list;
