@@ -116,13 +116,45 @@
 // ----------------- SNACK 6 --------------------
 // Stampa il cubo dei primi N numeri, dove N è un numero indicato dall'utente. 
 
-var user_number = Number(prompt('Tell me a number'));
+// var user_number = Number(prompt('Tell me a number'));
 
-var i = 0;
-while (i <= user_number) {
-    var risultato = Math.pow(i, 3);
-    var element = document.getElementById('stampa').innerHTML;
-    document.getElementById('stampa').innerHTML = element + "<li>" + risultato + "</li>";
+// var i = 0;
+// while (i <= user_number) {
+//     var risultato = Math.pow(i, 3);
+//     var element = document.getElementById('stampa').innerHTML;
+//     document.getElementById('stampa').innerHTML = element + "<li>" + risultato + "</li>";
 
-    i++;
+//     i++;
+// }
+
+// ----------------- SNACK 8 --------------------
+
+// Chiedi un numero di 4 cifre all'utente e calcola la somma di tutte le cifre che compongono il numero. 
+var list = [];
+var string_number = prompt('Tell me a 4-digit number');
+var leng = string_number.length;
+
+console.log(leng);
+
+var somma = 0;
+for (var i = 0; i <= leng; i++) {
+    var user_number = Number(string_number.charAt(i));
+    somma += user_number;
+
+
 }
+
+console.log(somma);
+
+
+// var somma = 0;
+// for (var i = 0; i <= list.length; i++) {
+//     somma = somma + list[i];
+
+// }
+// console.log(risultato);
+
+
+
+
+// controllo che il numero sia effettivamente di 4 cifre 
