@@ -136,15 +136,21 @@ var leng = string_number.length;
 
 console.log(leng);
 
-var somma = 0;
-for (var i = 0; i <= leng; i++) {
-    var user_number = Number(string_number.charAt(i));
-    somma += user_number;
-
-
+// CONTROLLO CHE IL NUMERO DI CARATTERI SIA ESATTAMENTE PARI A QUELLO RICHIESTO 
+if (leng !== 4) {
+    alert('Choose a 4 digit number, like: 1234');
+    document.getElementById('stampa_2').innerHTML = "Try again";
 }
 
-console.log(somma);
+var somma = 0;
+for (var i = 0; i < leng; i++) {
+    var user_number = Number(string_number.charAt(i));
+    somma += user_number;
+    document.getElementById('stampa').innerHTML += "<li>" + user_number + "</li>";
+    document.getElementById('stampa_2').innerHTML = "La somma dei numeri precedenti è " + somma;
+}
+
+
 
 
 // var somma = 0;
