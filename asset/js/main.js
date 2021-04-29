@@ -127,31 +127,66 @@
 //     i++;
 // }
 
+// ----------------- SNACK 7 --------------------
+// STAMPA LA POTENZE DI 2 FINO A 1000 
+var counter = 0;
+while (Math.pow(2, counter) < 1000) {
+
+    var potenza = Math.pow(2, counter);
+    console.log(potenza);
+
+    counter++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ----------------- SNACK 8 --------------------
 
 // Chiedi un numero di 4 cifre all'utente e calcola la somma di tutte le cifre che compongono il numero. 
-var list = [];
-var string_number = prompt('Tell me a 4-digit number');
-var leng = string_number.length;
+// var list = [];
+// var string_number = prompt('Tell me a 4-digit number');
+// var leng = string_number.length;
 
-console.log(leng);
+// console.log(leng);
 
-// CONTROLLO CHE IL NUMERO DI CARATTERI SIA ESATTAMENTE PARI A QUELLO RICHIESTO 
-if (leng !== 4) {
-    alert('Choose a 4 digit number, like: 1234');
-    document.getElementById('stampa_2').innerHTML = "Try again";
-}
+// // CONTROLLO CHE IL NUMERO DI CARATTERI SIA ESATTAMENTE PARI A QUELLO RICHIESTO 
+// if (leng !== 4) {
+//     alert('Choose a 4 digit number, like: 1234');
+//     document.getElementById('stampa_2').innerHTML = "Try again";
+// }
 
-var somma = 0;
-for (var i = 0; i < leng; i++) {
-    var user_number = Number(string_number.charAt(i));
-    somma += user_number;
-    document.getElementById('stampa').innerHTML += "<li>" + user_number + "</li>";
-    document.getElementById('stampa_2').innerHTML = "La somma dei numeri precedenti è " + somma;
-}
+// var somma = 0;
+// for (var i = 0; i < leng; i++) {
+//     var user_number = Number(string_number.charAt(i));
+//     somma += user_number;
+//     document.getElementById('stampa').innerHTML += "<li>" + user_number + "</li>";
+//     document.getElementById('stampa_2').innerHTML = "La somma dei numeri precedenti è " + somma;
+// }
+//  ---SOLUZIONE ALTERNATIVA CON ARRAY----- 
+// somma = 0;
+// var list = string_number.split('');
+// console.log(list);
+// for (var i = 0; i < list.length; i++) {
+//     var user_number = list[i];
+//     somma = somma + Number(user_number);
+// }
 
-
-
+// console.log(somma);
 
 // var somma = 0;
 // for (var i = 0; i <= list.length; i++) {
