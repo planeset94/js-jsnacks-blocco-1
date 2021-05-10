@@ -43,7 +43,8 @@ var triangolo = {
 
 }
 
-triangolo.ipotenusa = triangolo.base + triangolo.altezza;
+triangolo.ipotenusa = Math.sqrt(Math.pow(triangolo.base, 2) + Math.pow(triangolo.altezza, 2));
+
 console.log(triangolo);
 
 // var perimetro = triangolo.ipotenusa + triangolo.base + triangolo.altezza;
