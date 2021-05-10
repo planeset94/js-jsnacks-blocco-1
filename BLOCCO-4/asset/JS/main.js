@@ -46,13 +46,15 @@ var triangolo = {
 triangolo.ipotenusa = triangolo.base + triangolo.altezza;
 console.log(triangolo);
 
-var perimetro = triangolo.ipotenusa + triangolo.base + triangolo.altezza;
-console.log(perimetro);
+// var perimetro = triangolo.ipotenusa + triangolo.base + triangolo.altezza;
+// console.log(perimetro);
+var perimetro = 0;
+for (var key in triangolo) {
+    perimetro += triangolo[key];
 
-// for (var key in triangolo) {
-//     perimetro += number(triangolo[key]);
-//     console.log(perimetro);
-// };
+};
+console.log('perimetro :' + perimetro);
+
 
 var area = (triangolo.base * triangolo.altezza) / 2;
 
