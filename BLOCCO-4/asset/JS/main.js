@@ -7,7 +7,7 @@
 // Nome = palla
 // Peso = 10
 
-
+/*
 var Palla = {
     nome: 'palla',
     peso: 10,
@@ -15,9 +15,16 @@ var Palla = {
 
 console.log(Palla);
 
+*/
 
 //1B
 // Attraverso un prompt dare la possibilità all’utente di modificare il peso della palla.
+var Palla = {
+    nome: 'palla',
+    peso: 10,
+};
+
+console.log(Palla);
 userWeight = Number(prompt('Scrivi il peso della palla'));
 Palla.peso = userWeight;
 console.log(Palla);
