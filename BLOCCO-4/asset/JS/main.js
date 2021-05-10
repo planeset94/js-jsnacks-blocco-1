@@ -47,16 +47,26 @@ triangolo.ipotenusa = Math.sqrt(Math.pow(triangolo.base, 2) + Math.pow(triangolo
 
 console.log(triangolo);
 
-// var perimetro = triangolo.ipotenusa + triangolo.base + triangolo.altezza;
-// console.log(perimetro);
-var perimetro = 0;
-for (var key in triangolo) {
-    perimetro += triangolo[key];
+function snackFunction() {
+    var perimetro = 0;
+    for (var key in triangolo) {
+        perimetro += triangolo[key];
 
-};
-console.log('perimetro :' + perimetro);
+    };
+    return perimetro
+}
+
+// function snackFunction() {
+//     return perimetro = triangolo.base + triangolo.altezza + triangolo.ipotenusa;
+// }
 
 
-var area = (triangolo.base * triangolo.altezza) / 2;
 
-console.log(area);
+triangolo.perimetro = snackFunction();
+
+console.log(triangolo);
+
+
+triangolo.area = (triangolo.base * triangolo.altezza) / 2;
+
+console.log(triangolo);
