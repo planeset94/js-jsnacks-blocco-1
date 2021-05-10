@@ -19,6 +19,8 @@ console.log(Palla);
 
 //1B
 // Attraverso un prompt dare la possibilità all’utente di modificare il peso della palla.
+
+/*
 var Palla = {
     nome: 'palla',
     peso: 10,
@@ -26,5 +28,32 @@ var Palla = {
 
 console.log(Palla);
 userWeight = Number(prompt('Scrivi il peso della palla'));
-Palla.peso = userWeight;
+Palla['peso'] = userWeight;
 console.log(Palla);
+*/
+
+
+//SNACK 2
+// Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti proprietà: base e altezza.
+// Calcolare perimetro e area.
+
+var triangolo = {
+    base: 10,
+    altezza: 30,
+
+}
+
+triangolo.ipotenusa = triangolo.base + triangolo.altezza;
+console.log(triangolo);
+
+var perimetro = triangolo.ipotenusa + triangolo.base + triangolo.altezza;
+console.log(perimetro);
+
+// for (var key in triangolo) {
+//     perimetro += number(triangolo[key]);
+//     console.log(perimetro);
+// };
+
+var area = (triangolo.base * triangolo.altezza) / 2;
+
+console.log(area);
